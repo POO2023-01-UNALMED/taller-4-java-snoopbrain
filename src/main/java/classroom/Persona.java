@@ -31,19 +31,27 @@ public class Persona {
     }
 
     Persona(String nombre) {
-        this.nombre = nombre;
         this.cedula = 1;
+        this.nombre = nombre;
         totalPersonas++;
     }
     
+    // Persona(){
+    //     this.nombre = "";
+    //     this.cedula = 0;
+    //     totalPersonas++;
+    // }
     Persona(){
-        this.nombre = "";
         this.cedula = 0;
-        totalPersonas++;
     }
     
     long getCedula() {
         return cedula;
     }
-
+    String getNombre(){
+        return nombre;
+    }
+    void setNombre(String nombre){
+        this.nombre=nombre;
+    }
 }
